@@ -45,18 +45,18 @@ header h2 {
     cursor: pointer;
 }
 
-.navigation {
+nav {
     display: none;
     flex-direction: column;
     width: 100%;
     background: transparent;
 }
 
-.navigation.open {
+nav.open {
     display: flex;
 }
 
-.navigation a {
+nav a {
     color: white;
     text-decoration: none;
     text-align: center;
@@ -64,7 +64,7 @@ header h2 {
     transition: background-color .3s, color .3s;
 }
 
-.navigation a:hover {
+nav a:hover {
     background: white;
     color: var(--secondary);
 }
