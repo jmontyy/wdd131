@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1f4e79;
+    --secondary: #333333;
+    --background: #f4f4f4;
+    --card: #ffffff;
+    --text: #222222;
+    --border: #cccccc;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 1rem 2rem;
+}
+
+header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: transparent;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    transition: background-color .3s, color .3s;
+}
+
+.navigation a:hover {
+    background: white;
+    color: var(--secondary);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+}
+
+figure {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+
+    width: 100%;
+    max-width: 260px;
+
+    padding: 1rem;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    transition: transform .25s, box-shadow .25s;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: .75rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
