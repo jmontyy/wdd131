@@ -13,10 +13,6 @@
     --border: #cccccc;
 }
 
-html,
-body {
-    height: 100%;
-}
 
 body {
     font-family: "Poppins", sans-serif;
