@@ -1,3 +1,4 @@
+@media (min-width: 768px) {
 .hero-wrapper {
     position: relative;
     height: 100%;
@@ -55,4 +56,5 @@
 
 .weather-icon {
     display: none;
+}
 }
