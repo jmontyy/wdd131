@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Zealand</title>
+    <meta name="description" content="A page showing details about New Zealand">
+    <meta name="author" content="Josh Montgomery">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)">
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>New Zealand</h1>
+</header>
+
+<main>
+
+    <div class="hero-wrapper">
+
+        <section class="hero">
+            <picture>
+                <source
+                    media="(min-width: 800px)"
+                    srcset="images/hero-large.webp">
+
+                <img
+                    src="images/hero-small.webp"
+                    alt="New Zealand landscape"
+                    width="1200"
+                    height="700">
+            </picture>
+        </section>
+
+        <section class="card data">
+            <h2>Data</h2>
+
+            <p><span class="label">Capital:</span> Wellington</p>
+            <p><span class="label">Population:</span> 5.2 Million</p>
+            <p><span class="label">Area:</span> 268,021 km²</p>
+            <p><span class="label">Language:</span> English, Māori</p>
+            <p><span class="label">Currency:</span> New Zealand Dollar</p>
+            <p><span class="label">Time Zone:</span> UTC+12 / UTC+13 (DST)</p>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img
+                src="images/weather.svg"
+                alt="Partly Cloudy"
+                class="weather-icon">
+
+            <p><span class="label">Temperature:</span> 8°C</p>
+            <p><span class="label">Conditions:</span> Partly Cloudy</p>
+            <p><span class="label">Wind:</span> 15 km/h</p>
+
+            <p>
+                <span class="label">Wind Chill:</span>
+                <span id="windchill"></span>
+            </p>
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© <span id="currentyear"></span> Josh Montgomery</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
