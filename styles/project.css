@@ -1,0 +1,152 @@
+:root {
+    --foreground-bg: #15101d;
+    --foreground-border: #9944ff;
+    --backdrop-bg: #0a080f;
+    --backdrop-border: #b06bff;
+    --text: white;
+    --text-light: #d6c3bb;
+    --input-bg: #352750;
+    --background: linear-gradient(0deg, rgb(0 17 23) 0%, rgb(48 0 35) 100%);
+    --shaded-bg: #2b1f40;
+    --positive: #22a000;
+    --negative: #dc2a2a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--foreground-bg);
+    border: 3px solid var(--foreground-border);
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+header h1 {
+    color: var(--backdrop-border);
+}
+
+section {
+    background-color: var(--foreground-bg);
+    border: 2px solid var(--foreground-border);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+h2 {
+    color: var(--backdrop-border);
+    border-bottom: 2px solid var(--foreground-border);
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: var(--text-light);
+}
+
+p,
+li {
+    color: var(--text-light);
+}
+
+strong {
+    color: var(--text);
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.wireframe {
+    background-color: var(--shaded-bg);
+    border: 2px dashed var(--backdrop-border);
+    padding: 20px;
+    text-align: center;
+    margin: 15px 0;
+    border-radius: 8px;
+    color: var(--text);
+}
+
+.logo {
+    color: var(--backdrop-border);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--foreground-bg);
+    border: 2px solid var(--foreground-border);
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.flex-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.wireframe section {
+    outline: 2px solid var(--foreground-border);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.wireframeBox {
+    background-color: var(--foreground-bg);
+    border: 2px solid var(--backdrop-border);
+    padding: 20px;
+    text-align: center;
+    margin: 15px 0;
+    border-radius: 8px;
+    color: var(--text);
+}
+
+.wireframe section:last-child {
+    margin-bottom: 0;
+}
+
+.mobile-wireframe-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desktop-wireframe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobile-wireframe-header h1,
+.desktop-wireframe-header h1 {
+    margin: 0;
+}
+
+.flex-h > * {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    flex: 1;
+}
+
+.wireframe-body {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
